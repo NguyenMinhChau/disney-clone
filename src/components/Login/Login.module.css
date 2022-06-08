@@ -1,0 +1,166 @@
+.login {
+    position: relative;
+}
+
+.login_image {
+    padding-top: 40% !important;
+    background: url('./image/bg_image_login.png') no-repeat center/cover;
+}
+
+.login_absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login_width_custom {
+    width: 60% !important;
+}
+
+.login_top {
+    width: 100%;
+    height: 200px;
+}
+
+.login_image_top {
+    width: 100%;
+    height: 100%;
+    background: url('./image/cta-logo-one.svg') no-repeat center/contain;
+}
+
+.login_middle {
+    width: 100% !important;
+}
+
+.btn_custom {
+    display: block !important;
+    width: 100% !important;
+    padding: 7px !important;
+    border-radius: 6px !important;
+    border: none !important;
+    outline: none !important;
+    color: #fff !important;
+    background-color: #065ee5 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.btn_custom:hover {
+    opacity: 0.9 !important;
+}
+
+.middle_text_container {
+    text-align: center !important;
+}
+
+.middle_text {
+    letter-spacing: 1px !important;
+}
+
+.login_bottom {
+    --cols: 9;
+    --spacing: 8px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: calc(var(--spacing) * -1) !important;
+    margin-left: calc(var(--spacing) * -1) !important;
+}
+
+.bottom_item {
+    width: calc(100% / var(--cols));
+    height: 100%;
+    padding: var(--spacing);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_item_1 {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    background: url('./image/viewers-disney.png') no-repeat center/contain;
+}
+
+.bottom_item_2 {
+    width: 100%;
+    height: 100%;
+    background: url('./image/viewers-pixar.png') no-repeat center/contain;
+}
+
+.bottom_item_3 {
+    width: 100%;
+    height: 100%;
+    background: url('./image/viewers-marvel.png') no-repeat center/contain;
+}
+
+.bottom_item_4 {
+    width: 100%;
+    height: 100%;
+    background: url('./image/viewers-starwars.png') no-repeat center/contain;
+}
+
+.bottom_item_5 {
+    width: 100%;
+    height: 100%;
+    background: url('./image/viewers-national.png') no-repeat center/contain;
+}
+
+.bottom_item_6 {
+    width: 30px;
+    height: 30px;
+    background: url('./image/watchlist-icon.svg') no-repeat center/contain;
+}
+
+/* PC */
+@media (min-width: 64em) {}
+
+/* IPAD Pro */
+@media (max-width: 64em) {}
+
+/* TABLET & MOBILE */
+@media (max-width: 63.9375em) {
+    .login {
+        height: 640px !important;
+        margin-top: 66px !important;
+        margin-bottom: 66px !important;
+    }
+
+    .login_width_custom {
+        width: 80% !important;
+    }
+
+    .login_image {
+        padding-top: 100% !important;
+    }
+
+    .login_bottom {
+        --cols: 3;
+    }
+}
+
+/* TABLET */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .login_absolute {
+        margin-bottom: 28% !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 46.25em) {
+    .middle_text {
+        font-size: 12px !important;
+    }
+
+    .login_absolute {
+        margin-bottom: 53% !important;
+    }
+}

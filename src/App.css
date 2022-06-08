@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.app {
+    overflow: hidden !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text_bold {
+    font-weight: bold !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-center {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-underline {
+    text-decoration: underline !important;
 }
 
-.App-link {
-  color: #61dafb;
+ul li {
+    list-style: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* UL NAVBAR */
+.nav-link.dropdown-toggle {
+    padding-top: 18px !important;
 }
+
+.avatar-user {
+    max-width: 40px !important;
+    min-width: 40px !important;
+    max-height: 40px !important;
+    min-height: 40px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+.slick-dots li button:before {
+    color: #fff !important;
+}
+
+.slick-next {
+    right: 25px !important;
+}
+
+.slick-prev {
+    left: 25px !important;
+    z-index: 1 !important;
+}
+
+.loader {
+    width: 25px;
+    height: 25px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* PC */
+@media (min-width: 64em) {}
+
+/* IPAD Pro */
+@media (max-width: 64em) {}
+
+/* TABLET & MOBILE */
+@media (max-width: 63.9375em) {
+    .badge {
+        text-align: left !important;
+        line-height: 1.5 !important;
+        white-space: pre-wrap !important;
+    }
+}
+
+/* TABLET */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {}
+
+/* MOBILE */
+@media (max-width: 46.25em) {}
